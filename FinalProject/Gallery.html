@@ -4,7 +4,7 @@
  <title>Lisa Peterson-INST728j</title>
   <meta http-equiv="content-type"charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link type="text/css" rel="stylesheet" >
+   <link type="text/css" rel="stylesheet" href="mystyles.css" >
 <style>
 /* Image gallery code pulled from W3Schools   */    
 * {
@@ -91,27 +91,49 @@ body {
   <p>Click on the images below to see the Construction Doctors at Work</p>
 </div>
 
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:75%">
+  <div id="imgtext"></div>
+</div>
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="UC.png" alt="Under Construction 1" style="width:100%" onclick="myFunction(this);">
+    <img src="images/IMG_2218.jpg" alt="Walkway" style="width:50%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="UC1.png" alt="Under Construction 2" style="width:100%" onclick="myFunction(this);">
+    <img src="images/IMG_2219.jpg" alt="Deck Entrane" style="width:50%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="UC.png" alt="Under Construction 3" style="width:100%" onclick="myFunction(this);">
+    <img src="images/IMG_2220.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="UC1.png" alt="Under Construction 3" style="width:100%" onclick="myFunction(this);">
+    <img src="images/IMG_2221.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
   </div>
+     <div class="column">
+    <img src="images/IMG_2222.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+     <div class="column">
+    <img src="images/IMG_2223.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+     <div class="column">
+    <img src="images/IMG_2224.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+     <div class="column">
+    <img src="images/IMG_2225.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+     <div class="column">
+    <img src="images/IMG_2226.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+     <div class="column">
+    <img src="images/IMG_2227.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+     <div class="column">
+    <img src="images/IMG_2228.jpg" alt="Under Construction 3" style="width:50%" onclick="myFunction(this);">
+  </div>
+  
 </div>
 
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
-</div>
 
 <script>
 function myFunction(imgs) {
