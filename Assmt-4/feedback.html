@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;"/>
+<title>Feedback</title>
+    <script type="text/javascript">
+    
+    function validateForm() {
+     if (document.Feedback.Case.value ==""){
+                    alert( "Please provide your Case Number" );
+           document.Feedback.Case.focus();
+            return false;
+         }
+        
+        if (document.Feedback.Subject.value ==""){
+                    alert( "Please provide a Subject for your Feedback" );
+           document.Feedback.Subject.focus();
+            return false;
+         }
+        if (document.Feedback.Comment.value ==""){
+                    alert( "Please enter Comments for your Feedback" );
+           document.Feedback.Comment.focus();
+            return false;
+         }
+    }
+    </script>
+    <style type="text/css">
+    
+    .container{
+			width:1000px;
+	       margin:auto;
+            background-color: #bd6a6a;
+			padding:40px;
+		}
+        
+             
+        .main-container {
+			width:1000px;
+            background-color: #822733;
+			height : 500px;
+            margin-top: -20px;
+		}
+        
+        
+		.header-container {
+			background-color : white;
+			width: 1000px;
+		}
+          
+            img {
+        display: block;
+              width:  25%;}
+		
+        
+        .form-container{
+            width: 500px;
+            background-color: 	#f5e9dc;
+            margin: 0 auto; 
+                      
+        }
+        
+        #content{
+			background-color : 	#f5e9dc;
+			margin-left: 25%;
+			height : 500px;
+            width: 700px;
+        }
+        
+                  
+        .sidemenu{
+			padding-left: 20px;
+            width : 25%
+			float : left;
+			background-color : white
+            height : 100%;
+            position:fixed!important;z-index:1;overflow:auto;
+		}
+		
+    	
+		.footer-container{
+			clear : both;
+			background-color : lavenderblush;
+			padding : 10px;
+            text-align: center;
+            width: 980px;
+			
+		}
+        
+        ul {
+            list-style-image: url('arrow.gif');
+            color: yellow;
+            font-size: 16px;
+}
+        li {padding-bottom: 10px;
+            
+        }
+
+        a:link {
+  color: yellow;  
+}
+         a:visited {
+  color: white;
+             font-weight: bold;
+             
+            
+}
+        .required-field::after {
+  content: "*";
+  color: red;
+    
+        
+}
+    </style>
+</head>
+    <body>
+        <div class="container">
+          <div class="header-container"><img src="UMDLogo.jpg"></div>
+            <div class="main-container">
+               <div class="sidemenu">
+                   <ul>
+                    
+                  <li>Payroll Information</li>
+                       <li><a href="#">Performace Appraisal</a></li>
+                       <li><a href="#">TimeSheet</a></li>
+                       <li><a href="#">Leave Management</a></li>
+                       <li><a href="#">Health Benefits</a></li>
+                       <li><a href="orgchart.html">Organization Chart</a></li>
+                       <li><a href="#">Access Management</a></li>
+                       <li><a href="#">Career Development</a></li>
+                       <li><a href="#">My Profile</a></li>
+                       <li><a href="#">Expense Reimbursement</a></li>
+                       <li><a href="#">Retirement Planning</a></li>
+                       <li><a href="#">Ticket Management</a></li>
+                       <li><a href="#">Documents</a></li>
+                     <li><a href= "feedback.html">Feedback</a></li>            
+                </ul>
+                </div>
+                <div id="content"> 
+        <div class="form-container">  
+            <h3>Please complete the following form:</h3>
+   <form style="background-color:lavenderblush" name="Feedback" method="post" action="ThankYou.html" onsubmit="return (validateForm());" >
+
+       <table >
+    <tr>
+<td><label for="CaseID"><strong>CaseID:</strong></label></td>
+<td><input name="Case" type="text" placeholder="CaseID"> </td>
+    </tr>
+    <tr>
+  <td><label for="Subject"><strong>Subject: </strong><span class="required-field"></span></label></td>  
+	<td>  <input name="Subject" type="text"></td>  
+    </tr>
+    <tr>
+        <td> <label for="Comment"><strong>Comment:</strong><span class="required-field"></span></label></td>
+   <td><textarea rows="10" cols="50" input name="Comment" type="text"></textarea></td>
+</tr>
+<!---
+<tr>
+    <td><label for="Importance"><strong>Importance</strong></label></td>
+	 <td><input type="radio" name="Importance">High<br>
+	<input type="radio" name="Importance">Medium<br>
+         <input type="radio" name="Importance" required >Low <br></td>
+
+</tr>
+-->
+<tr>
+    <td colspan="2" style="text-align:center">
+	<input type="submit" value="Submit"> </td> </tr>
+    </table>
+</form>
+           
+</div>
+                </div>
+      </div>  
+            <div class="footer-container">
+		<footer> <div>Copyright(c)UMD.  All Rights Reserved.</div></footer>
+		</div>
+    </body>
+</html>
