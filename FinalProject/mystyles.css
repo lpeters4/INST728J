@@ -58,6 +58,7 @@ margin:20px;
 	padding:  10px;
 	text-align:center;
 	color:  white;
+    bottom:0;
 
 }
 /* Style the image */
@@ -73,17 +74,18 @@ table{
     border-collapse: collapse;
     text-align: left;
 }
-tr {
+
+th {
     border-bottom: 1px solid #cbcbcb;
-}
+
 th, td{
     border: none;
     height: 30px;
     padding: 2px;
 }
-tr:hover {
+/* tr:hover {
     background-color:#c1dcf5 ;
-}
+} */
 
 form {
     width: 50%;
@@ -93,4 +95,3 @@ form {
     border: 1px solid #bbbbbb; 
     border-radius: 5px;
 }
-
